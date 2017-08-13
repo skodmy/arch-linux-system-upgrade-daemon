@@ -5,7 +5,9 @@ Arch Linux system upgrade daemon.
 For running installation you need to have on your machine bash, gcc and root privileges.
 
 ## Installation
-From bash run install.sh with root privileges.
+From bash run:
+	
+	sudo ./install.sh
 
 ## Usage
 For daemon being running you need to have pacman, also systemd will be useful for automation some tasks.
@@ -41,11 +43,13 @@ If you see active on status line then run:
 	
 	systemctl stop system-upgrade-daemon
 
-Then for uninstalling run uninstall.sh with root privileges.
-
 If you earlier have enabled service then you need to run:
 
 	systemctl disable system-upgrade-daemon
+
+At last, for uninstalling run:
+	
+	sudo ./uninstall.sh
 
 ## Future prospects
 This software will packaged and uploaded to one of Arch Linux repositories for managing it easily with pacman.
