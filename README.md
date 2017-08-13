@@ -12,30 +12,39 @@ For daemon being running you need to have pacman, also systemd will be useful fo
 
 For performing the next commands you need to have a root privileges.
 
-For a status check run in terminal
+For a status check run in terminal:
+
 	systemctl status system-upgrade-daemon
 
-For starting a daemon run in terminal
+For starting a daemon run in terminal:
+
 	systemctl start system-upgrade-daemon
 
-For stopping
+For stopping:
+
 	systemctl stop system-upgrade-daemon
 
-For enabling a service run in bash
+For enabling a service run in bash:
+
 	systemctl enable system-upgrade-daemon
-For disabling
+
+For disabling:
+	
 	systemctl disable system-upgrade-daemon
 
 ## Uninstallation
-First run in terminal
+First run in terminal:
+	
 	systemctl status system-upgrade-daemon
 
-If you see active on status line then run
+If you see active on status line then run:
+	
 	systemctl stop system-upgrade-daemon
 
 Then for uninstalling run uninstall.sh with root privileges.
 
-If you earlier have enabled service then you need to run
+If you earlier have enabled service then you need to run:
+
 	systemctl disable system-upgrade-daemon
 
 ## Future prospects
