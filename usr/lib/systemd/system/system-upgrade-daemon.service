@@ -1,0 +1,10 @@
+[Unit]
+Description=System Upgrade Daemon
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/system-upgrade-daemon
+
+[Install]
+WantedBy=multi-user.target
